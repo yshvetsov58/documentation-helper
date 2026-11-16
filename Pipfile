@@ -23,17 +23,16 @@ langchain-community = "*"
 langsmith = "*"
 pillow = "*"
 langchain-tavily = "*"
-langchain-pinecone = "*"
 certifi = "*"
 langchain-chroma = "*"
 python-dotenv = "*"
-
+pinecone=">=10.1.0"
 [dev-packages]
 ipykernel = "*"
 
 [requires]
-python_version = "3.11"
-python_full_version = "3.11.0"
+python_version = "3.13.12"
+python_full_version = "3.13.12"
 
 [pipenv]
 allow_prereleases = true
