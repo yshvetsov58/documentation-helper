@@ -109,7 +109,7 @@ def run_llm(query:str)-> Dict[str, Any]:
     for message in response["messages"]:
         if isinstance(message, ToolMessage) and hasattr(message, "artifact"):
             if isinstance(message.artifact, list):
-                context_documents.append(message.artifact)
+                context_documents.extend(message.artifact)
     return {
         "answer": answer,
         "context": context_documents
